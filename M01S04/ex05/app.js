@@ -1,7 +1,9 @@
 let number = prompt('Introdu un numar:');
+let limit = prompt('Limita superioara:');
 
-if (number % 7 === 0) {
-  console.log('Numarul este multiplu de 7');
-} else {
-  console.log('Numarul NU este multiplu de 7');
+for (let i = 0; i <= limit; i++) {
+  if (i % number !== 0) {
+    continue;
+  }
+  console.log(`${i} este multiplu de ${number}`);
 }
